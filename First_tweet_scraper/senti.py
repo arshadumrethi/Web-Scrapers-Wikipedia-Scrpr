@@ -18,5 +18,7 @@ public_tweets = api.search('Trump')
 
 #Printing tweet and its corresponding sentiment value.
 for tweet in public_tweets:
-    print analysis = TextBlob(tweet.text)
-    print senti = analysis.sentiment
+    analysis = TextBlob(tweet.text)
+    print analysis
+    senti = analysis.sentiment
+    print senti
